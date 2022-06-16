@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Game</title>
+
+</head>
+
+
+
+<body>
+    <div class="container">
+      <!-- Titulo del juego   -->  
+     <h1>Piedra papel o tijera</h1>
+     
+     <div id="txt-option">
+      <!-- Subtitulo para jugar   -->  
+        Presiona una opción para jugar
+     </div>
+
+      <!-- Puntsjes del usuario y de la computadora -->  
+     <div id="puntuaciones">
+
+        <p id="ptj-user">Usuario: 0</p>
+
+        <p id="ptj-pc">Computadora: 0</p>
+
+     </div>
+
+      <!-- Clase para los botones de piedra, papel y tijera  -->  
+     <div id="group-btn">
+        <button id='rock' type="button">
+            <img src="img/rock.png">
+        </button>
+
+        <button id='paper' type="button">
+            <img src="img/paper.png">
+        </button>
+
+        <button id='scissors' type="button">
+            <img src="img/scissors.png">
+        </button>
+     </div>
+
+
+      <!-- Clase para las opciones escogidas por el usuario y la computadora -->  
+     <div id="option">
+        <button id="btn-option-user" type="button" disabled>
+            <img id='option-user' src="img/tuercas.gif">
+        </button>
+
+        <p id="txt-vs"> VS </p>
+
+        <button id="btn-option-computer" type="button" disabled>
+            <img id="option-computer" src="img/tuercas.gif">
+        </button>
+     </div>
+
+      <!-- Imagen de la computadora -->  
+     <div id="computer">
+        <img id="img-computer" src="img/computer.png"
+     </div>
+     
+      <!-- Clase para los resultados del juego -->  
+     <div id="result">
+        <img id='loading' src="">
+        <h4 id="txt-result"></h4>
+
+      <!-- Botón para volver a jugar -->  
+        <div id = 'btn-play-again'>
+        <button id="play-again" type="button" onclick="reload()"> Volver a jugar </button>
+        </div>
+        
+     </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+    
+</body>
+</html>

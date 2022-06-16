@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*  Fondo del cuerpo   */
+body{
+    background-color: #222;
+}
+
+/*  Estylos  del cuerpo   */
+.container{
+    max-width: 600px;
+    height: 100vh;
+    max-height: 745px;
+    margin: 0 auto;
+    background-color: rgb(255, 197, 91);
+    border: 3px solid black;
+
+}
+
+/*  Estilos para el titulo principal   */
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*  Estilos para la clase de las puntuaciones de ambos   */
+#puntuaciones{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 35px;
+    margin: 20px 0px; 
+}
+
+/*  Estilos para las puntuaciones de ambos */
+#ptj-user, #ptj-pc {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(42, 42, 42);
+}
+
+/*  Estilos para el titulo segundario   */
+#txt-option{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(42, 42, 42);
+    margin: 60px;
+}
+
+/*  Estilos para la clase de los botones que escoge el usuario   */
+#group-btn{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    margin-left: 50px;
+}
+
+/* Estilos para los botones   */
+
+#group-btn > button {
+    margin: 1px;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 3px;
+}
+
+/*  Estilos para cuando el usuario pasa el mouse */
+#group-btn > button:hover {
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+   
+}
+
+/*  Estilos para las imagenes que están dentro de los botones */
+#group-btn > button > img{
+    width: 100%;
+    height: 50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* Estilo para la clase de opciones elegidas  */
+#option{
+    margin-top: -110px; 
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para la imagen de la opción elegida por el usuario  */
+#option > #btn-option-user > img{
+    width: 100%;
+    height: 50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/*  stilo para la imagen de la opción elegida por la computadora */
+#option > #btn-option-computer > img{
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Estilos para el texto: VS  */
+#txt-vs{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para la clase de la computadora */
+#computer{
+    margin-top: -110px;
+    text-align: right;
+
+}
+
+/* Estilos para la imagen de la computadora */
+#computer > img {
+    width: 30%;
+    height: 30%;
+}
+
+/* Estilos para el resultado final */
+#result > img {
+    width: 15%;
+    height: 0%;
+
+}
+
+/* Estilos para el texto del resultado */
+
+#txt-result{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(42, 42, 42);
+}
+
+/* Estilos para el botón play-again*/
+#play-again {
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #222;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Estilos para la clase del botón */
+
+#btn-play-again{
+    display: none;
+}
+
+/* Estilos para la imagen de los resultados */
+#loading{
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+/* Estilos cuando el usuario pasa el mouse por el btn pla-again */
+
+#play-again:hover {
+    cursor: pointer;
+}
